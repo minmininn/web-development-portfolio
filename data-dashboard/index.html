@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Data Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Student Data Dashboard</h1>
+<p style="color: rgb(9, 15, 41);">
+    Interactive Student Data Analysis Dashboard
+</p>
+
+<!-- 统计 -->
+<div class="card">
+    <h2>Statistics</h2>
+    <p id="avgText">Average Study Time: 0</p >
+</div>
+
+<!-- 输入区 -->
+<div class="card">
+    <h2>Add Study Hours</h2>
+    <input id="day" placeholder="Day (Mon)">
+    <input id="hours" placeholder="Hours">
+    <button onclick="addData()">Add</button>
+</div>
+
+<!--  图表 -->
+<div class="card">
+    <h2>Study Hours Chart</h2>
+    <canvas id="studyChart"></canvas>
+</div>
+
+<div class="card">
+    <h2>Task Distribution</h2>
+    <canvas id="taskChart"></canvas>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
